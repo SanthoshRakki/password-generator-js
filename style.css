@@ -1,72 +1,96 @@
 *{
     margin: 0;
     padding: 0;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     box-sizing: border-box;
+
 }
 body{
-    background: #001e4d;
+    background: #002339;
+    color: #fff;
 }
-.app{
-    background: #fff;
+.container{
+    margin: 12%;
     width: 90%;
-    max-width: 600px;
-    margin: 100px auto 0;
-    border-radius: 10px;
-    padding: 30px;
+    max-width: 700px;
 }
-.app h1{
-    font-size: 25px;
-    color: #001e4d;
-    font-weight: 600;
-    border-bottom: 1px solid #333;
-    padding-bottom: 30px;
-}
-.quiz{
-    padding: 20px 0;
-}
-.quiz h2{
-    font-size: 18px;
-    color: #001e4d;
-    font-weight: 600;
-
-}
-.btn{
-    background: white;
-    color: #222;
-    font-weight: 500;
+.display{
     width: 100%;
-    border: 1px solod #222;
-    padding: 10px;
-    margin: 10px 0;
-     text-align: left;
-     border-radius: 4px;
-     cursor: pointer;
-     transition:all 0.3s;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    background: #fff;
+    color: #333;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 26px 20px;
+    border-radius: 5px;
 }
-.btn:hover:not([disabled]){
-    background: #222;
-    color: #fff;
+.display-number {
+    width: 50%;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    background: #fff;
+    color: #333;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
 
-}
-.btn:disabled{
-    cursor: no-drop;
-}
-#next-btn{
-    background: #001e4d;
-    color: #fff;
-    font-weight: 500;
-    width: 150px;
-    padding: 10px;
+.display-number input {
     border: 0;
-    margin: 10px;
-    border-radius: 4px;
+    outline: 0;
+    font-size: 24px;
+    padding: 10px;
+    width: 80%;
+}
+
+/* .display-number input[type="number"]::-webkit-inner-spin-button,
+.display-number input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 30;
+    font-size: 1.5em;
+    display: inline-block;
+} */
+
+.display-number input[type="number"] {
+    -moz-appearance: textfield; /* Firefox */
+}
+.container h1{
+    font-weight: 500;
+    font-size: 45px;
+}
+.container h1 span{
+    color: #019f55;
+    border-bottom: 4px solid #019f55;
+    padding-bottom: 7px;
+}
+.display img{
+    width: 30px;
     cursor: pointer;
-    display: none;
 }
-.correct{
-    background: rgb(157, 212, 157);]
+.display input{
+    border: 0;
+    outline:0;
+    font-size: 24px;
 }
-.incorrect{
-    background: rgb(220, 154, 154);
+.container img{
+    width: 28px;
+    margin-right: 10px;
+}
+.container button{
+    border: 0;
+    outline: 0;
+    background: #019f55;
+    font-size:22px;
+    font-weight: 300;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 16px 26px;
+    border-radius: 5px;
+    cursor: pointer;
 }
